@@ -240,6 +240,7 @@ img {
   font-weight: var(--font-semibold);
   transition: 0.3s;
   border-radius: 0.5rem;
+  box-shadow: 0px 0px 4px 1px #e56b5bcf;
 }
 .button:hover {
   background-color: var(--first-color-alt);
@@ -257,6 +258,7 @@ img {
   background-color: var(--gray-color);
   transition: 0.3s;
   border-radius: 0.5rem;
+  box-shadow: 0 2px 4px 1px #a8a8a8;
 }
 .collection__box:hover {
   transform: translateY(-0.5rem);
@@ -303,6 +305,7 @@ img {
   justify-content: center;
   background-color: var(--gray-color);
   border-radius: 0.5rem;
+  box-shadow: 0 2px 2px 1px #6060608a;
 }
 .featured__new {
   position: absolute;
@@ -363,6 +366,7 @@ img {
   background-color: var(--gray-color);
   overflow: hidden;
   border-radius: 0.5rem;
+  box-shadow: 0 2px 2px 1px #6060608a;
 }
 
 .new__link {
