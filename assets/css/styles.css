@@ -309,13 +309,14 @@ img {
 }
 .featured__new {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0.025rem;
+  left: 0.015rem;
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 0.3rem 0.75rem;
   font-size: var(--small-font-size);
-  border-radius: 0.15rem;
+  border-radius: 0.5rem  .25rem .25rem .25rem;
+  box-shadow: inset 0px 0px 2px 1px #f0f1f3;
 }
 .featured__data {
   text-align: center;
