@@ -310,7 +310,7 @@ img {
 .featured__new {
   position: absolute;
   top: 0.025rem;
-  left: 0.015rem;
+  left: 0rem;
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 0.3rem 0.75rem;
