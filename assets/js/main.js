@@ -100,6 +100,6 @@ sr.reveal('.featured__container,.new__container',{delay:1200})
 sr.reveal('.new__box',{delay:1400,interval:100,origin:'left'})
 sr.reveal('.section__subtitle,.offer__bg,.newsletter__description',{origin:'left',delay:1400,distance:'200px'})
 sr.reveal('.footer__box',{origin:'bottom',delay:1600,interval:100})
-sr.reveal('.footer__copy',{origin:'right',distance:'100px'})
+sr.reveal('.footer__copy',{origin:'right',distance:'20px'})
 
 

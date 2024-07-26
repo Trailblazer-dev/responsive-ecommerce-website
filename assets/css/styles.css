@@ -198,6 +198,9 @@ img {
 .active {
   color: var(--first-color);
 }
+.main{
+  overflow: hidden;
+}
 
 /*===== HOME =====*/
 .home {
