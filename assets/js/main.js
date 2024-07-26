@@ -81,3 +81,25 @@ const swiper = new Swiper(".featured__container, .new__container", {
     },
   },
 });
+
+// REVEAL
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2000,
+    delay:700,
+    reset: true,
+});
+
+sr.reveal('.home__data')
+sr.reveal('.home__img,.newsletter__form',{origin:'right',delay:950,distance:'100px'})
+sr.reveal('.collection__box,.sponsor__logo',{interval:100,delay:1000})
+sr.reveal('.section__title',{origin:'bottom',delay:900})
+sr.reveal('.featured__container,.new__container',{delay:1200})
+sr.reveal('.new__box',{delay:1400,interval:150,origin:'left'})
+sr.reveal('.section__subtitle,.offer__bg,.newsletter__description',{origin:'left',delay:1400,distance:'200px'})
+sr.reveal('.footer__box',{origin:'bottom',delay:1600,interval:100})
+sr.reveal('.footer__copy',{origin:'right',distance:'100px'})
+
+
