@@ -9,6 +9,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -17,58 +19,73 @@
   </head>
   <body>
     <!--===== HEADER =====-->
-    <header class="header">
-        <nav class="nav bd-grid">
-            <a href="#" class="nav__logo">SARA</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item">
-                        <a href="#featured" class="nav__link">Featured</a></li>
-                    <li class="nav__item">
-                        <a href="#new" class="nav__link">New</a></li>
-                    <li class="nav__item">
-                        <a href="#subscribe" class="nav__link">Subscribe</a></li>
-                </ul>
-            </div>
-            <div>
-                <i class="ri-shopping-cart-line nav__cart"></i>
-                <i class="ri-menu-line  nav__toggle " id="nav-toggle"></i>
-            </div>
-        </nav>
+    <header class="header" id="header">
+      <nav class="nav bd-grid">
+        <a href="#" class="nav__logo">SARA</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Featured</a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">New</a>
+            </li>
+            <li class="nav__item">
+              <a href="#subscribe" class="nav__link">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <i class="ri-shopping-cart-line nav__cart"></i>
+          <i class="ri-menu-line nav__toggle" id="nav-toggle"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
       <!--===== HOME =====-->
       <section class="home" id="home">
         <div class="home__container bd-grid">
-            <div class="home__data">
-                <h1 class="home__title">NEW <br><span>ARRIVALS</span></h1>
-                <a href="#featured" class="button">GO SHOPPING</a>
-            </div>
-            <img src="assets/img/home.png" alt="image" class="home__img">
+          <div class="home__data">
+            <h1 class="home__title">NEW <br /><span>ARRIVALS</span></h1>
+            <a href="#featured" class="button">GO SHOPPING</a>
+          </div>
+          <img src="assets/img/home.png" alt="image" class="home__img" />
         </div>
       </section>
 
       <!--===== COLLECTION =====-->
       <section class="collection section">
         <div class="collection__container bd-grid">
-            <div class="collection__box">
-                <img src="assets/img/backpackMan.png" alt="image" class="collection__img">
-                <div class="collection__data">
-                    <h2 class="collection__title"><span class="collection__subtitle">Men</span><br>Backpack</h2>
-                    <a href="#" class="collection__view">View collection</a>
-                </div> 
+          <div class="collection__box">
+            <img
+              src="assets/img/backpackMan.png"
+              alt="image"
+              class="collection__img"
+            />
+            <div class="collection__data">
+              <h2 class="collection__title">
+                <span class="collection__subtitle">Men</span><br />Backpack
+              </h2>
+              <a href="#" class="collection__view">View collection</a>
             </div>
-            <div class="collection__box">
-                
-                <div class="collection__data">
-                    <h2 class="collection__title"><span class="collection__subtitle">Women</span><br>Backpack</h2>
-                    <a href="#" class="collection__view">View collection</a>
-                </div> 
-                <img src="assets/img/backpackWoman.png" alt="image" class="collection__img">
+          </div>
+          <div class="collection__box">
+            <div class="collection__data">
+              <h2 class="collection__title">
+                <span class="collection__subtitle">Women</span><br />Backpack
+              </h2>
+              <a href="#" class="collection__view">View collection</a>
             </div>
+            <img
+              src="assets/img/backpackWoman.png"
+              alt="image"
+              class="collection__img"
+            />
+          </div>
         </div>
       </section>
 
@@ -76,61 +93,83 @@
       <section class="featured section" id="featured">
         <h2 class="section__title">FEATURED PRODUCTS</h2>
         <a href="#" class="section__subtitle">View all</a>
-        <div class="featured__container bd-grid">
-            <div class="featured__product">
-                <div class="featured__box">
-                    <div class="featured__new">NEW</div>
-                    <img src="assets/img/feature1.png" alt="image" class="featured__img">
-                </div>
-                <div class="featured__data">
-                    <h3 class="featured__name">Headphones One Black</h3>
-                    <span class="featured__price">$29</span>
-                </div>
+        <div class="featured__container bd-grid swiper">
+          <div class="swiper-wrapper">
+            <div class="featured__product swiper-slide">
+              <div class="featured__box">
+                <div class="featured__new">NEW</div>
+                <img
+                  src="assets/img/feature1.png"
+                  alt="image"
+                  class="featured__img"
+                />
+              </div>
+              <div class="featured__data">
+                <h3 class="featured__name">Headphones One Black</h3>
+                <span class="featured__price">$29</span>
+              </div>
             </div>
 
-            <div class="featured__product">
-                <div class="featured__box">
-                    <div class="featured__new">NEW</div>
-                    <img src="assets/img/feature2.png" alt="image" class="featured__img">
-                </div>
-                <div class="featured__data">
-                    <h3 class="featured__name">Speaker Beats Pill</h3>
-                    <span class="featured__price">$199</span>
-                </div>
+            <div class="featured__product swiper-slide">
+              <div class="featured__box">
+                <div class="featured__new">NEW</div>
+                <img
+                  src="assets/img/feature2.png"
+                  alt="image"
+                  class="featured__img"
+                />
+              </div>
+              <div class="featured__data">
+                <h3 class="featured__name">Speaker Beats Pill</h3>
+                <span class="featured__price">$199</span>
+              </div>
             </div>
-            
-            <div class="featured__product">
-                <div class="featured__box">
-                    <div class="featured__new">NEW</div>
-                    <img src="assets/img/feature3.png" alt="image" class="featured__img">
-                </div>
-                <div class="featured__data">
-                    <h3 class="featured__name">Apple Air Pods</h3>
-                    <span class="featured__price">$122</span>
-                </div>
+
+            <div class="featured__product swiper-slide">
+              <div class="featured__box">
+                <div class="featured__new">NEW</div>
+                <img
+                  src="assets/img/feature3.png"
+                  alt="image"
+                  class="featured__img"
+                />
+              </div>
+              <div class="featured__data">
+                <h3 class="featured__name">Apple Air Pods</h3>
+                <span class="featured__price">$122</span>
+              </div>
             </div>
-            
-            <div class="featured__product">
-                <div class="featured__box">
-                    <div class="featured__new">NEW</div>
-                    <img src="assets/img/feature4.png" alt="image" class="featured__img">
-                </div>
-                <div class="featured__data">
-                    <h3 class="featured__name">Smartwatch  F9 Negro</h3>
-                    <span class="featured__price">$99</span>
-                </div>
+
+            <div class="featured__product swiper-slide">
+              <div class="featured__box">
+                <div class="featured__new">NEW</div>
+                <img
+                  src="assets/img/feature4.png"
+                  alt="image"
+                  class="featured__img"
+                />
+              </div>
+              <div class="featured__data">
+                <h3 class="featured__name">Smartwatch F9 Negro</h3>
+                <span class="featured__price">$99</span>
+              </div>
             </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!--===== OFFER =====-->
       <section class="offer section">
         <div class="offer__bg">
-            <div class="offer__data">
-                <h2 class="offer__title">Special Offer</h2>
-                <p class="offer__description">Special offers for women this week only </p>
-                <a href="#" class="button">SHOP NOW</a>
-            </div>
+          <div class="offer__data">
+            <h2 class="offer__title">Special Offer</h2>
+            <p class="offer__description">
+              Special offers for women this week only
+            </p>
+            <a href="#" class="button">SHOP NOW</a>
+          </div>
         </div>
       </section>
 
@@ -138,125 +177,159 @@
       <section class="new section" id="new">
         <h2 class="section__title">NEW ARRIVALS</h2>
         <a href="#" class="section__subtitle">View All</a>
-        <div class="new__container bd-grid">
-            <div class="new__box">
-                <img src="assets/img/new1.png" alt="image" class="new__img">
-                <div class="new__link">
-                    <a href="#" class="button">VIEW PRODUCT</a>
-                </div>
+        <div class="new__container bd-grid swiper">
+          <div class="swiper-wrapper">
+            <div class="new__box swiper-slide">
+              <img src="assets/img/new1.png" alt="image" class="new__img" />
+              <div class="new__link">
+                <a href="#" class="button">VIEW PRODUCT</a>
+              </div>
             </div>
-
-            <div class="new__box">
-                <img src="assets/img/new2.png" alt="image" class="new__img">
-                <div class="new__link">
-                    <a href="#" class="button">VIEW PRODUCT</a>
-                </div>
+            <div class="new__box swiper-slide">
+              <img src="assets/img/new2.png" alt="image" class="new__img" />
+              <div class="new__link">
+                <a href="#" class="button">VIEW PRODUCT</a>
+              </div>
             </div>
-            <div class="new__box">
-                <img src="assets/img/new3.png" alt="image" class="new__img">
-                <div class="new__link">
-                    <a href="#" class="button">VIEW PRODUCT</a>
-                </div>
+            <div class="new__box swiper-slide">
+              <img src="assets/img/new3.png" alt="image" class="new__img" />
+              <div class="new__link">
+                <a href="#" class="button">VIEW PRODUCT</a>
+              </div>
             </div>
-            <div class="new__box">
-                <img src="assets/img/new4.png" alt="image" class="new__img">
-                <div class="new__link">
-                    <a href="#" class="button">VIEW PRODUCT</a>
-                </div>
+            <div class="new__box swiper-slide">
+              <img src="assets/img/new4.png" alt="image" class="new__img" />
+              <div class="new__link">
+                <a href="#" class="button">VIEW PRODUCT</a>
+              </div>
             </div>
-            <div class="new__box">
-                <img src="assets/img/new5.png" alt="image" class="new__img">
-                <div class="new__link">
-                    <a href="#" class="button">VIEW PRODUCT</a>
-                </div>
+            <div class="new__box swiper-slide">
+              <img src="assets/img/new5.png" alt="image" class="new__img" />
+              <div class="new__link">
+                <a href="#" class="button">VIEW PRODUCT</a>
+              </div>
             </div>
-            <div class="new__box">
-                <img src="assets/img/new6.png" alt="image" class="new__img">
-                <div class="new__link">
-                    <a href="#" class="button">VIEW PRODUCT</a>
-                </div>
+            <div class="new__box swiper-slide">
+              <img src="assets/img/new6.png" alt="image" class="new__img" />
+              <div class="new__link">
+                <a href="#" class="button">VIEW PRODUCT</a>
+              </div>
             </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!--===== NEWSLETTER =====-->
       <section class="newsletter section" id="subscribe">
         <div class="newsletter__container bd-grid">
-            <div class="newsletter__subscribe">
-                <h2 class="section__title">OUR NEWSLETTER</h2>
-                <p class="newsletter__description">Promotion new products and sales. Directly to you</p>
-                <form action="" method="post" class="newsletter__form">
-                    <input type="email" name="email" id="email" class="newsletter__input" placeholder="Enter your email">
-                    <a href="#" class="button">SUBSCRIBE</a>
-                </form>
-            </div>
+          <div class="newsletter__subscribe">
+            <h2 class="section__title">OUR NEWSLETTER</h2>
+            <p class="newsletter__description">
+              Promotion new products and sales. Directly to you
+            </p>
+            <form action="#" method="post" class="newsletter__form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="newsletter__input"
+                placeholder="Enter your email"
+              />
+              <a href="#" class="button">SUBSCRIBE</a>
+            </form>
+          </div>
         </div>
       </section>
 
       <!--===== SPONSORS =====-->
       <section class="sponsors section">
         <div class="sponsor__container bd-grid">
-            <div class="sponsor__logo">
-                <img src="assets/img/logo1.png" alt="image">
-            </div>
-            <div class="sponsor__logo">
-                <img src="assets/img/logo2.png" alt="image">
-            </div>
-            <div class="sponsor__logo">
-                <img src="assets/img/logo3.png" alt="image">
-            </div>
-            <div class="sponsor__logo">
-                <img src="assets/img/logo4.png" alt="image">
-            </div>
+          <div class="sponsor__logo">
+            <img src="assets/img/logo1.png" alt="image" />
+          </div>
+          <div class="sponsor__logo">
+            <img src="assets/img/logo2.png" alt="image" />
+          </div>
+          <div class="sponsor__logo">
+            <img src="assets/img/logo3.png" alt="image" />
+          </div>
+          <div class="sponsor__logo">
+            <img src="assets/img/logo4.png" alt="image" />
+          </div>
         </div>
       </section>
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer section">
-        <div class="footer__container bd-grid">
-            <div class="footer__box">
-                <h3 class="footer__title">SARA</h3>
-                <p class="footer__deal">Products Store</p>
-                <a href=""><img src="assets/img/footerstore1.png" alt="image" class="footer__store"></a>
-                <a href=""><img src="assets/img/footerstore2.png" alt="image" class="footer__store"></a>
-            </div>
-            <div class="footer__box">
-                <h3 class="footer__title">EXPLORE</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Home</a></li>
-                    <li><a href="#" class="footer__link">Featured</a></li>
-                    <li><a href="#" class="footer__link">New</a></li>
-                    <li><a href="#" class="footer__link">Subscribe</a></li>
-                </ul>
-            </div>
-            <div class="footer__box">
-                <h3 class="footer__title">OUR SERVICES</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Pricing</a></li>
-                    <li><a href="#" class="footer__link">Free Shipping</a></li>
-                    <li><a href="#" class="footer__link">Gift Cards</a></li>
-                   </li>
-                </ul>
-            </div>
-            <div class="footer__box">
-                <h3 class="footer__title">FOLLOW</h3>
-                <a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social">
-                    <i class="ri-facebook-box-fill"></i>
-                </a>
-                <a href="http://www.instargam.com/" target="_blank" rel="noopener noreferrer" class="footer__social">
-                    <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="http://www.x.com/" target="_blank" rel="noopener noreferrer" class="footer__social">
-                    <i class="ri-twitter-x-line"></i>
-                </a>
-            </div>
-            <p class="footer__copy">
-                &copy; 2024 copyright all right reserved
-            </p>
-            
+      <div class="footer__container bd-grid">
+        <div class="footer__box">
+          <h3 class="footer__title">SARA</h3>
+          <p class="footer__deal">Products Store</p>
+          <a href=""
+            ><img
+              src="assets/img/footerstore1.png"
+              alt="image"
+              class="footer__store"
+          /></a>
+          <a href=""
+            ><img
+              src="assets/img/footerstore2.png"
+              alt="image"
+              class="footer__store"
+          /></a>
         </div>
+        <div class="footer__box">
+          <h3 class="footer__title">EXPLORE</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Home</a></li>
+            <li><a href="#" class="footer__link">Featured</a></li>
+            <li><a href="#" class="footer__link">New</a></li>
+            <li><a href="#" class="footer__link">Subscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h3 class="footer__title">OUR SERVICES</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Free Shipping</a></li>
+            <li><a href="#" class="footer__link">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h3 class="footer__title">FOLLOW</h3>
+          <a
+            href="http://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social"
+          >
+            <i class="ri-facebook-box-fill"></i>
+          </a>
+          <a
+            href="http://www.instargam.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social"
+          >
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a
+            href="http://www.x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social"
+          >
+            <i class="ri-twitter-x-line"></i>
+          </a>
+        </div>
+        <p class="footer__copy">&copy; 2024 copyright all right reserved</p>
+      </div>
     </footer>
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
